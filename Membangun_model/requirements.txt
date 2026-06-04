@@ -1,0 +1,10 @@
+xgboost
+mlflow
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+python-dotenv
+psutil
+prometheus-client

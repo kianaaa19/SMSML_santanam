@@ -1,0 +1,55 @@
+# ==========================================
+# 1. Python Standard & Environment Trash
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+venv/
+env/
+ENV/
+.pytest_cache/
+
+# ==========================================
+# 2. MLflow & Local Experiment Tracking
+# ==========================================
+# Mengabaikan folder runs lokal agar tidak bentrok dengan remote server DagsHub
+mlruns/
+mlartifacts/
+.mlflow/
+
+# ==========================================
+# 3. Data & Saved Models (Lokal)
+# ==========================================
+# Abaikan file biner model yang kamu simpan lokal secara acak
+*.xgb
+*.pkl
+*.joblib
+*.h5
+*.onnx
+
+# Jika kamu ingin mengabaikan dataset mentah/bersih agar repo tidak berat (Opsional)
+# *.csv
+# *.xlsx
+
+# ==========================================
+# 4. OS & IDE Specific (Arch Linux / VS Code)
+# ==========================================
+.DS_Store
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+*~
+
+# ==========================================
+# 5. Docker Logs & Metrics
+# ==========================================
+# Mengabaikan file data internal Prometheus/Grafana jika foldernya di-mount lokal
+prometheus_data/
+grafana_data/
+*.log

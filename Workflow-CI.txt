@@ -1,0 +1,5 @@
+Tautan Repositori GitHub Proyek:
+https://github.com/kianaaa19/SMSML_santanam
+
+Tautan Repositori Image Docker Hub Publik:
+https://hub.docker.com/r/kianaaa19/mlops-churn-app

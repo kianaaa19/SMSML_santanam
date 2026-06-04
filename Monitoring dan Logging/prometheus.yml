@@ -1,0 +1,9 @@
+global:
+  scrape_interval: 15s # Menarik metrik setiap 15 detik
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: 'mlops-churn-model'
+    metrics_path: /metrics # MLflow scoring server menyediakan endpoint metrik bawaan di jalur ini
+    static_configs:
+      - targets: ['host.docker.internal:8000']
